@@ -19,6 +19,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
+  padding-top: 0.5rem;
   text-align: center;
 
 }
@@ -35,7 +36,7 @@ body {
 .hero {
   background-size: cover;
   background-position: center;
-  padding: 4rem 2rem;
+  padding: 4rem rem;
   text-align: center;
   color: #3b2f2f;
 
