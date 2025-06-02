@@ -1,0 +1,36 @@
+.wrapper-div {
+  padding: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title-pdf {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #3b2f2f;
+  font-family: 'Georgia', serif;
+}
+
+.container-pdf {
+  border: 1px solid #c1a77d;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  background: #fffdf9;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin: 0 auto;
+  max-width: 850px; 
+  max-height: 950px;
+}
+
+/* -----------------------Responsive PDF pages----------------------- */
+.container-pdf canvas {
+  display: block;
+  margin: 1rem auto;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 750px;
+  max-height: 850px;
+}

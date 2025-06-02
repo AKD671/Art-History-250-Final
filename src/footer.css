@@ -1,0 +1,28 @@
+.web_footer {
+  background-color: #e8ddca;
+  color: #3b2f2f;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem;
+  margin-top: 3rem;
+  border-top: 1px solid #c1a77d;
+  font-family: 'Georgia', serif;
+}
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #1a1a1a;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}

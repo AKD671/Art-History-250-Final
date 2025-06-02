@@ -1,0 +1,148 @@
+:root {
+  --main-bg: #f9f7f4;
+  --accent: #c1a77d;
+  --dark-text: #3b2f2f;
+  --soft-shadow: rgba(0, 0, 0, 0.06);
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--dark-text);
+  font-family: 'Inter', sans-serif;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.exhibit{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+
+.paintings {
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+.paintings:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #3b2f2f;
+
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-title:hover{
+  cursor:default;
+}
+
+.hero-subtitle {
+
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+
+}
+
+.paintings{
+
+  border: 2px solid #c1a77d;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+
+}
+
+.paintings.fade {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.painting_img{
+  width: 100%;
+  max-height: 400px;
+  margin-top: 0.5rem;
+  max-width: fit-content;
+  object-fit: cover;
+}
+
+.painting-info{
+  padding: 1rem;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav :hover{
+    transform: scale(1.01);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    color: #171212;
+}
+
+button {
+  background: #c1a77d;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #a47c4e;
+}
+
+.paintings, .container-pdf, .question-form-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+.painting_img {
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.painting_img:hover {
+  transform: scale(1.02);
+}
+@media (max-width: 768px) {
+
+  .painting-card, .container-pdf, .question-form-container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+
+}
