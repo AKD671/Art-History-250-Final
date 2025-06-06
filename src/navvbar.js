@@ -13,8 +13,8 @@ export default function Navbar(){
             <button className="nav-toggle" onClick={() => setOpen(!open)}> <FaBars/></button>
             <ul className={`nav-links ${open ? 'show' : ''}`}>
                 <li><a><Link to={'/' }>Home</Link></a></li>
+                                <li><a><Link to={'/About' }>About</Link></a></li>
                 <li><a><Link to={'/Catalog' }>Catalog</Link></a></li>
-                <li><a><Link to={'/About' }>About</Link></a></li>
                 <li><a><Link to={'/Contact' }>Contact</Link></a></li>
                             
             </ul>
