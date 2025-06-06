@@ -83,7 +83,7 @@ function Exhibition() {
     <div className="exhibit ">
       <motion.div className='hero' initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeOut' }}>
         <h1 className='hero-title'>Final Exhibition </h1>
-        <p className='hero-subtitle'>Pre-Oreintalsim Oreintalsim: Kernels of Oreintalsim in Early Modern European Art</p>
+        <p className='hero-subtitle'> From Amsterdam to Istanbul: Kernels of Oreintalsim in Early Modern European Art</p>
       </motion.div >
         <div key={fadeKey}className='paintings fade'>
           <img src={painting.imageUrl} alt={painting.title} className='painting_img'/>
@@ -100,10 +100,8 @@ function Exhibition() {
           <button onClick={prev}> <FaArrowLeft/> Back </button>
           <button onClick={next}> Next  <FaArrowRight/></button>
         </div>
-
     </div>
   );
-
 }
 function App(){
   return (
