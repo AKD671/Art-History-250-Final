@@ -81,11 +81,8 @@ body {
 }
 
 .painting_img{
-  width: 100%;
-  max-height: 400px;
   margin-top: 0.5rem;
-  max-width: fit-content;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .painting-info{
@@ -147,3 +144,49 @@ button:hover {
 
 
 }
+.painting-container {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #c1a77d;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.painting_img {
+  width: 100%;
+  max-height: 400px;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 8px;
+}
+
+.painting-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(249, 247, 244, 0.95);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease;
+  color: #3b2f2f;
+  border-radius: 8px;
+}
+
+.painting-container:hover .painting-info {
+  opacity: 1;
+}
+
+.painting-container:hover .painting_img {
+  transform: scale(1.02);
+}
+
