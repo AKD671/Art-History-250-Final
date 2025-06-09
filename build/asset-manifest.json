@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1f84dd56.css",
+    "main.js": "/static/js/main.b08fe68b.js",
+    "static/media/img6.png": "/static/media/img6.e8d0befe8f30f4768331.png",
+    "static/media/img3.jpg": "/static/media/img3.46cdc3a178e5740fc7e3.jpg",
+    "static/media/img2.jpg": "/static/media/img2.801d5497da23e1a1ff0b.jpg",
+    "static/media/img4.jpg": "/static/media/img4.e1667d5ecfc03726971b.jpg",
+    "static/media/img1.jpg": "/static/media/img1.b5470632aebcb6c8c95e.jpg",
+    "static/media/sultanbellini.jpg": "/static/media/sultanbellini.14ca4d52526e05018887.jpg",
+    "static/media/logo.png": "/static/media/logo.ec70002ab3f64a47a281.png",
+    "static/media/essay.pdf": "/static/media/essay.9e344cb17d802c4fca5d.pdf",
+    "index.html": "/index.html",
+    "main.1f84dd56.css.map": "/static/css/main.1f84dd56.css.map",
+    "main.b08fe68b.js.map": "/static/js/main.b08fe68b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f84dd56.css",
+    "static/js/main.b08fe68b.js"
+  ]
+}

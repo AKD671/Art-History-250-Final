@@ -92,7 +92,7 @@ function Exhibition() {
         className='hero'
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
+        transition={{ duration: 0.9, ease: 'easeOut' }}
       >
         <h1 className='hero-title'>Final Exhibition</h1>
         <p className='hero-subtitle'>From Amsterdam to Istanbul: Kernels of Orientalism in Early Modern European Art</p>
