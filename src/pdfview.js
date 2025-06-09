@@ -12,7 +12,7 @@ export default function Pdfviewer() {
       <div className="wrapper-div" >
         <div className="container-pdf">
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js"></Worker>
-            <Viewer fileUrl={path} defaultScale={1.2}  />
+            <Viewer fileUrl={path} defaultScale={1}  />
         </div>
       </div>
     );

@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import React from 'react';
+import { useState, React } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Catalog from './Catalog.js';
 import About from './About.js';
@@ -14,8 +13,8 @@ import image6 from './img/img6.png';
 import Site_footer from './footer.js';
 import Navbar from './navvbar.js';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import { motion } from 'framer-motion';
-import { title } from 'framer-motion/client';
+import { motion } from 'framer-motion'; 
+
 
 const paintings_list = [
   {
@@ -23,7 +22,7 @@ const paintings_list = [
     artist: "Rembrandt",
     date: "1632",
     medium: "Oil on canvas",
-    catalog_entry: "<p>As you move through this exhibition, we invite you to engage deeply with the art and to consider the questions it raises about cultural encounter, representation, and power. What does it mean to depict another culture? How do fascination and fantasy intertwine in these images? And what can these centuries-old works tell us about the ongoing conversations between East and West in our world today?</p>",
+    catalog_entry: "As you move through this exhibition, we invite you to engage deeply with the art and to consider the questions it raises about cultural encounter, representation, and power. What does it mean to depict another culture? How do fascination and fantasy intertwine in these images? And what can these centuries-old works tell us about the ongoing conversations between East and West in our world today?",
     collection: "The Metropolitan Museum of Art",
     imageUrl: image
   },
@@ -32,7 +31,7 @@ const paintings_list = [
     artist: "David Teniers the Younger",
     date: "1654-1656",
     medium: "Oil on Canvas",
-    catalog_entry: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...",
+    catalog_entry: "As you move through this exhibition, we invite you to engage deeply with the art and to consider the questions it raises about cultural encounter, representation, and power. What does it mean to depict another culture? How do fascination and fantasy intertwine in these images? And what can these centuries-old works tell us about the ongoing conversations between East and West in our world today?",
     collection: "Art Institute of Chicago",
     imageUrl: image2
   },
@@ -41,7 +40,7 @@ const paintings_list = [
     artist: "Rembrandt van Rijn - Ferdandad Bol",
     date: "1654",
     medium: "Etching and drypoint on ivory Japanese paper",
-    catalog_entry: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...",
+    catalog_entry: "As you move through this exhibition, we invite you to engage deeply with the art and to consider the questions it raises about cultural encounter, representation, and power. What does it mean to depict another culture? How do fascination and fantasy intertwine in these images? And what can these centuries-old works tell us about the ongoing conversations between East and West in our world today?",
     collection: "Art Institute of Chicago",
     imageUrl: image3
   },
@@ -50,7 +49,7 @@ const paintings_list = [
     artist: "Jacob Ochtervelt",
     date: "1671",
     medium: "Oil on canvas",
-    catalog_entry: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...",
+    catalog_entry: "As you move through this exhibition, we invite you to engage deeply with the art and to consider the questions it raises about cultural encounter, representation, and power. What does it mean to depict another culture? How do fascination and fantasy intertwine in these images? And what can these centuries-old works tell us about the ongoing conversations between East and West in our world today?",
     collection: "Art Institute of Chicago",
     imageUrl: image4
   },
@@ -59,17 +58,17 @@ const paintings_list = [
     artist: "Gentile Bellini",
     date: "1480",
     medium: "Oil on Canvas",
-    catalog_entry: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...",
+    catalog_entry: "As you move through this exhibition, we invite you to engage deeply with the art and to consider the questions it raises about cultural encounter, representation, and power. What does it mean to depict another culture? How do fascination and fantasy intertwine in these images? And what can these centuries-old works tell us about the ongoing conversations between East and West in our world today?",
     collection: "National Gallery (UK)",
     imageUrl: image5
   },
   {
-    title: "Christ Washing the Disciples’ Feet",
+    title: "Christ Washing the Disciples Feet",
     artist: "Rembrandt van Rijn",
     date: "1640 - 1650",
     medium: "Oil on Canvas",
-    catalog_entry: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...",
-    collection: "Rijksmuseum (Amsterdam)",
+    catalog_entry: "As you move through this exhibition, we invite you to engage deeply with the art and to consider the questions it raises about cultural encounter, representation, and power. What does it mean to depict another culture? How do fascination and fantasy intertwine in these images? And what can these centuries-old works tell us about the ongoing conversations between East and West in our world today?",
+    collection: "Rijksmuseum (Amsterdam)", 
     imageUrl: image6
   }
 ];
@@ -108,7 +107,8 @@ function Exhibition() {
           <p><strong>Date:</strong> {painting.date}</p>
           <p><strong>Collection:</strong> {painting.collection}</p>
         </div>
-        <div>
+        <div className='painting-catalog-info'>
+          <p><strong>Painting Catalog Entry</strong></p>
           <p>{painting.catalog_entry}</p>
         </div>
       </div>

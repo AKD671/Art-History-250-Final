@@ -190,3 +190,8 @@ button:hover {
   transform: scale(1.02);
 }
 
+.painting-catalog-info{
+  padding: 1rem;
+  margin-left: 1.5rem ;
+  margin-right: 1.5rem;
+}
